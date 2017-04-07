@@ -7,7 +7,6 @@ import cn.itcast.bookstore.order.daomain.OrderItem;
 import cn.itcast.bookstore.order.service.OrderService;
 import cn.itcast.bookstore.user.damain.User;
 import cn.itcast.bookstore.user.service.UserException;
-import cn.itcast.bookstore.user.service.UserService;
 import cn.itcast.commons.CommonUtils;
 import cn.itcast.servlet.BaseServlet;
 
@@ -102,12 +101,36 @@ public class OrderServlet extends BaseServlet {
         String oid = request.getParameter("oid");
         //根据订单好查询订单状态
         try {
-            orderService.findOrderState(oid);
+            orderService.findOrderState(oid,3,4);
         } catch (UserException e) {
             request.setAttribute("msg","订单异常");
             return "f:/jsps/order/msg.jsp";
         }
         request.setAttribute("msg","确认收货成功");
+        return "f:/jsps/order/msg.jsp";
+
+
+    }
+
+    /**
+     * 付款
+     * @param request
+     * @param response
+     * @return
+     * @throws ServletException
+     * @throws IOException
+     */
+    public String payment(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String oid = request.getParameter("oid");
+        //根据订单好查询订单状态
+        try {
+            orderService.findOrderState(oid, 1, 2);
+        } catch (UserException e) {
+//            request.setCharacterEncoding(e.getMessage());
+            request.setAttribute("msg","订单异常");
+            return "f:/jsps/order/msg.jsp";
+        }
+        request.setAttribute("msg","已付款等待发货");
         return "f:/jsps/order/msg.jsp";
 
 

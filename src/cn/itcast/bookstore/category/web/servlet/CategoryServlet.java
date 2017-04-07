@@ -24,6 +24,7 @@ public class CategoryServlet extends BaseServlet {
         List<Category> categories = categoryCervice.findAll();
 
         request.setAttribute("categorys",categories);
+
         return "f:/jsps/left.jsp";
 
     }

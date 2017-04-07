@@ -53,13 +53,15 @@ public class OrderService {
         return orderDao.finfOrderByOid(oid);
     }
 
-    public void findOrderState(String oid) throws UserException {
+    public void findOrderState(String oid, int i1, int i) throws UserException {
 
         int state = orderDao.findOrderState(oid);
-        if (state != 3) {
+        if (state != i1) {
             throw new UserException("订单异常");
         }
-        //修改订单状态为4
-        orderDao.changOrderState(oid,4);
+        //修改订单状态为i
+        orderDao.changOrderState(oid,i);
     }
+
+
 }

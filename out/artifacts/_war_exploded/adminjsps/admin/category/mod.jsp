@@ -21,9 +21,9 @@
   
   <body>
     <h1>修改分类</h1>
-    <form action="javascript:alert('修改分类成功！');" method="post">
+    <form action="<c:url value="/admine/AdmineCategoryServlet?method=changeCategoryName&cid=${category.cid}"/> " method="post">
     	<input type="hidden" name="cid" value="" />
-    	分类名称：<input type="text" name="cname" value="JavaSE分类"/>
+    	分类名称：<input type="text" name="cname" value="${category.cname}"/>
     	<input type="submit" value="修改分类"/>
     </form>
   </body>
