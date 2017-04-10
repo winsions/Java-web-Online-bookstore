@@ -2,16 +2,17 @@
 desc 'ManagerLib 使用这个航道, 可以快速的对自己的私有库, 进行升级维护'
 lane :ManagerLib do |options|
 
-messageName = options[:message]
+message = options[:message]
+
 
 # 具体这个巷道上面执行哪些行为
-
-
+# 1.git_pull
+git_pull
 # 2. git add .
 git_add(path: ".")
 # 3   git commit -m 'xxx'
-git_commit(path: ".", message: messageName)
-
-
+git_commit(path: ".", message: message)
+# 4   git push origin master
+push_to_git_remote
 
 end

@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d0501ad-4ccb-470b-92a9-6af7c7d733a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/itcast/bookstore/book/web/servlet/admine/AdmineAddBookServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/itcast/bookstore/order/web/servlet/Admine/AdmineOrderServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/adminjsps/admin/book/add.jsp" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/adminjsps/admin/book/add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/adminjsps/admin/book/desc.jsp" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/adminjsps/admin/book/desc.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/adminjsps/admin/left.jsp" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/adminjsps/admin/left.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/_war_exploded/adminjsps/admin/order/list.jsp" afterPath="$PROJECT_DIR$/out/artifacts/_war_exploded/adminjsps/admin/order/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/itcast/bookstore/book/dao/BookDao.java" afterPath="$PROJECT_DIR$/src/cn/itcast/bookstore/book/dao/BookDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/itcast/bookstore/book/service/BookService.java" afterPath="$PROJECT_DIR$/src/cn/itcast/bookstore/book/service/BookService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/itcast/bookstore/book/web/servlet/admine/AdmineBookServlet.java" afterPath="$PROJECT_DIR$/src/cn/itcast/bookstore/book/web/servlet/admine/AdmineBookServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastlane/Fastfile" afterPath="$PROJECT_DIR$/fastlane/Fastfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastlane/README.md" afterPath="$PROJECT_DIR$/fastlane/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fastlane/report.xml" afterPath="$PROJECT_DIR$/fastlane/report.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/itcast/bookstore/order/dao/OrderDao.java" afterPath="$PROJECT_DIR$/src/cn/itcast/bookstore/order/dao/OrderDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/itcast/bookstore/order/service/OrderService.java" afterPath="$PROJECT_DIR$/src/cn/itcast/bookstore/order/service/OrderService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/adminjsps/admin/book/add.jsp" afterPath="$PROJECT_DIR$/web/adminjsps/admin/book/add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/adminjsps/admin/book/desc.jsp" afterPath="$PROJECT_DIR$/web/adminjsps/admin/book/desc.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/adminjsps/admin/left.jsp" afterPath="$PROJECT_DIR$/web/adminjsps/admin/left.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/adminjsps/admin/order/list.jsp" afterPath="$PROJECT_DIR$/web/adminjsps/admin/order/list.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,8 +60,8 @@
       <file leaf-file-name="OrderDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/itcast/bookstore/order/dao/OrderDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="177" column="42" lean-forward="false" selection-start-line="177" selection-start-column="42" selection-end-line="177" selection-end-column="42" />
+            <state relative-caret-position="217">
+              <caret line="175" column="26" lean-forward="true" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -947,12 +933,12 @@
       <workItem from="1490853341347" duration="52635000" />
       <workItem from="1491355759424" duration="343000" />
       <workItem from="1491356436850" duration="300000" />
-      <workItem from="1491443348194" duration="33804000" />
+      <workItem from="1491443348194" duration="34134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121098000" />
+    <option name="totallyTimeSpent" value="121428000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -976,7 +962,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4384" sideWeight="0.48064515" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.49785867" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328" sideWeight="0.49112904" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328" sideWeight="0.49112904" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19112903" sideWeight="0.4739726" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2118003" sideWeight="0.5260274" order="5" side_tool="true" content_ui="tabs" />
@@ -1489,8 +1475,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/itcast/bookstore/order/dao/OrderDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="177" column="42" lean-forward="false" selection-start-line="177" selection-start-column="42" selection-end-line="177" selection-end-column="42" />
+        <state relative-caret-position="217">
+          <caret line="175" column="26" lean-forward="true" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
           <folding />
         </state>
       </provider>
