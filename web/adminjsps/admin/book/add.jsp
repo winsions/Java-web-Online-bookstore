@@ -22,18 +22,19 @@
   <body>
     <h1>添加图书</h1>
     <p style="font-weight: 900; color: red">${msg }</p>
-    <form action="javascript:alert('添加图书成功！')" method="post" enctype="multipart/form-data">
+    <%--<form action="<c:url value="/admine/AdmineAddBookServlet"/> " method="post"--%>
+    <form action="<c:url value="/admine/AdmineBookServlet?method=addBook"/> " method="post"
+		  <%--enctype="multipart/form-data"--%>
+	>
+		<input type="hidden" name="" value=""/>
     	图书名称：<input style="width: 150px; height: 20px;" type="text" name="bname"/><br/>
     	图书图片：<input style="width: 223px; height: 20px;" type="file" name="image"/><br/>
     	图书单价：<input style="width: 150px; height: 20px;" type="text" name="price"/><br/>
     	图书作者：<input style="width: 150px; height: 20px;" type="text" name="author"/><br/>
     	图书分类：<select style="width: 150px; height: 20px;" name="cid">
-    		<option value="">JavaSE</option>
-    		<option value="">JavaEE</option>
-			<option value="">JavaScript</option>
-			<option value="">Hibernate</option>
-			<option value="">Struts</option>
-			<option value="">Spring</option>
+		<c:forEach items="${categorys}" var="category">
+			<option value="${category.cid}">${category.cname}</option>
+		</c:forEach>
     	</select>
     	<br/>
     	<input type="submit" value="添加图书"/>

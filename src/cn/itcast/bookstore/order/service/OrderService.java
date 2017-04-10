@@ -64,4 +64,21 @@ public class OrderService {
     }
 
 
+    public List<Order> findAllorder() {
+        List<Order> orders  = orderDao.findAllOrder();
+        return orders;
+    }
+
+    /*
+
+     */
+    public void sendOrder(String oid, int i) {
+
+        orderDao.changOrderState(oid,i);
+    }
+
+    public List<Order> findorderByState(int i) {
+        List<Order> orders  =  orderDao.findorderByState(i);
+        return orders;
+    }
 }

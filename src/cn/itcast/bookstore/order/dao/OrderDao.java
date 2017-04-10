@@ -5,7 +5,6 @@ import cn.itcast.bookstore.order.daomain.Order;
 import cn.itcast.bookstore.order.daomain.OrderItem;
 import cn.itcast.commons.CommonUtils;
 import cn.itcast.jdbc.TxQueryRunner;
-import org.apache.commons.beanutils.BeanMap;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.MapListHandler;
@@ -143,6 +142,38 @@ public class OrderDao {
 
         try {
             txQueryRunner.update(sql, i, oid);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public List<Order> findAllOrder() {
+        String sql = "select *from orders ";
+        try {
+          List<Order> orders =  txQueryRunner.query(sql,new BeanListHandler<Order>(Order.class));
+            for (Order order :orders) {
+                loadOrderitem(order);
+            }
+            return orders;
+
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    public List<Order> findorderByState(int i) {
+        String sql = "select * from orders where state=?";
+        try {
+            List<Order> orders =  txQueryRunner.query(sql,new BeanListHandler<Order>(Order.class),(Number)i);
+            for (Order order :orders) {
+                loadOrderitem(order);
+            }
+            return orders;
+
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

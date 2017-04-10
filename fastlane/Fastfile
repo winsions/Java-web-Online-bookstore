@@ -1,0 +1,17 @@
+
+desc 'ManagerLib 使用这个航道, 可以快速的对自己的私有库, 进行升级维护'
+lane :ManagerLib do |options|
+
+messageName = options[:message]
+
+# 具体这个巷道上面执行哪些行为
+
+
+# 2. git add .
+git_add(path: ".")
+# 3   git commit -m 'xxx'
+git_commit(path: ".", message: messageName)
+
+
+
+end

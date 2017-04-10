@@ -68,6 +68,26 @@
         <url-pattern>/admine/AdmineBookServlet</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>AdmineAddBookServlet</servlet-name>
+        <servlet-class>cn.itcast.bookstore.book.web.servlet.admine.AdmineAddBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdmineAddBookServlet</servlet-name>
+        <url-pattern>/admine/AdmineAddBookServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>AdmineOrderServlet</servlet-name>
+        <servlet-class>cn.itcast.bookstore.order.web.servlet.Admine.AdmineOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdmineOrderServlet</servlet-name>
+        <url-pattern>/admine/AdmineOrderServlet</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>

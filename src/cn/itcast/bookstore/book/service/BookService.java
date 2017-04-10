@@ -30,4 +30,16 @@ public class BookService {
         if (books == null) throw new UserException("没有这个类型的图书");
         return books;
     }
+
+    public void delegateBook(String bid) {
+        bookDao.delegateBook(bid);
+    }
+
+    public void edit(Book book) {
+        bookDao.edit(book);
+    }
+
+    public void addBook(Book book) {
+        bookDao.addBook(book);
+    }
 }

@@ -54,4 +54,37 @@ public class BookDao {
             throw new RuntimeException(e);
         }
     }
+
+    public void delegateBook(String bid) {
+        String sql = "delete from book where bid=?";
+        try {
+            txQueryRunner.update(sql,bid);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void edit(Book book) {
+        String sql = "update book set bname=?, price=?,author=?, image=?, cid=? where bid=? ";
+        Object[] params = {book.getBname(), book.getPrice(),
+                book.getAuthor(), book.getImage(),
+                book.getCid(), book.getBid()};
+        try {
+            txQueryRunner.update(sql,params);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void addBook(Book book) {
+        String sql = "insert into book values (?,?,?,?,?,?)";//bname=?, price=?,author=?, image=?, cid=? , bid=? ";
+        Object[] params = {book.getBid(),book.getBname(), book.getPrice(),
+                book.getAuthor(), book.getImage(),
+                book.getCid() };
+        try {
+            txQueryRunner.update(sql,params);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
